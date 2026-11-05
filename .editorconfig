@@ -1,0 +1,14 @@
+[*]
+root = true
+
+[entry]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_trailing_whitespace = false
+max_line_length = 120
+linebreak_style = lf
+auto_proc_line_length = false
+include_line_feeling = false
+indent_tab_width = 4
+\n

@@ -1,0 +1,12 @@
+* text=auto
+
+*.js* text
+*.ts* text
+
+# Git attributes for line endings and diffs
+*.{,.gitattributes} text
+*.{,.prettierrc, .editorconfig} text
+
+# End of file markers
+*.{,.editorconfig,.prettierrc} text
+\n

@@ -1,26 +1,86 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer base {
+  :root {
+    --primary: hsl(222.2 47.4% 11.2%);
+    --primary-foreground: hsl(0 0% 98%);
+    --secondary: hsl(210 40% 96.1%);
+    --secondary-foreground: hsl(222.2 84% 4.9%);
+    --accent: hsl(0 0% 98%);
+    --accent-foreground: hsl(0 0% 10%);
+    --muted: hsl(215.26 16.86% 17%);
+    --muted-foreground: hsl(215.26 16.86% 40%);
+    --destructive: hsl(0 84.2% 67.5%);
+    --destructive-foreground: hsl(0 0% 98%);
+    --success: hsl(142.1 70.6% 45.3%);
+    --warning: hsl(38 92.2% 50.7%);
+    --info: hsl(199 89% 48%);
+    --credits: hsl(0 0% 50%);
+
+    --background: hsl(0 0% 100%);
+    --foreground: hsl(222.2 84% 4.9%);
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(222.2 84% 4.9%);
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: hsl(222.2 84% 4.9%);
+    --border: hsl(214.32 31.8% 19.4%);
+    --input: hsl(214.32 31.8% 19.4%);
+    --ring: hsl(222.2 84% 4.9%);
+
+    --radius: 0.75rem;
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Montserrat', sans-serif;
+  }
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-info: var(--info);
+  --color-credits: var(--credits);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-xl: var(--radius);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: hsl(222.2 84% 4.9%);
+    --foreground: hsl(0 0% 98%);
+    --card: hsl(222.2 84% 4.9%);
+    --card-foreground: hsl(0 0% 98%);
+    --popover: hsl(222.2 84% 4.9%);
+    --popover-foreground: hsl(0 0% 98%);
+    --primary: hsl(0 0% 98%);
+    --primary-foreground: hsl(222.2 84% 4.9%);
+    --secondary: hsl(222.2 84% 90%);
+    --secondary-foreground: hsl(222.2 84% 4.9%);
+    --muted: hsl(222.2 84% 17%);
+    --muted-foreground: hsla(222, 84%, 60%, 0.7);
+    --accent: hsl(22.5deg 100% 3.14%);
+    --accent-foreground: hsl(0 0% 10%);
+    --destructive: hsl(0 84.2% 67.5%);
+    --destructive-foreground: hsl(0 0% 98%);
+    --border: hsl(222.2 84% 17%);
+    --input: hsl(222.2 84% 17%);
+    --ring: hsl(222.2 84% 4.9%);
+    --credits: hsl(0 0% 50%);
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
